@@ -1,0 +1,32 @@
+mapping:
+  # the first row specifies column names
+  - name,           id,         food_name
+  - applePie,       ar413,      apple pie
+  - frenchFries,    fl346,      french fries
+  - pizza,          sk943,      pizza
+  - dumplings,      tq182,      dumplings
+  - lasagna,        mj939,      lasagna
+  - cupCakes,       oe262,      cup cakes   
+  - hamburger,      cu472,      hamburger
+  - hotDog,         jp401,      hot dog
+  - iceCream,       zm983,      ice cream
+  - pekingDuck,     nd108,      peking duck
+  - ramen,          va479,      ramen
+  - springRoll,     ru078,      spring rolls
+  - sushi,          gp032,      sushi
+  - waffles,        xo127,      waffles
+  - donuts,         he345,      donuts
+  - beefTartare,    yu147,      beef tartare
+  - chickenWings,   id295,      chicken wings 
+  - tacos,          ly231,      tacos
+  - sandwich,       qd317,      sandwich
+  - steak,          ew477,      steak
+
+data:
+  eval:
+    - images_dirs: [data/food/files]
+      templates:
+        - ["{image_prefix}The food shown is", " {food_name}"]
+
+eval_mode: 
+  rank: "eval"

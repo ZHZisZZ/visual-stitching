@@ -1,0 +1,44 @@
+mapping:
+  # the first row specifies column names
+  - name,       id,       animal_name
+  - bird,       ar413,    bird
+  - boxer,      fl346,    boxer
+  - cat,        sk943,    cat
+  - cock,       tq182,    cock
+  - duck,       mj939,    duck
+  - elephant,   oe262,    elephant
+  - fish,       cu472,    fish
+  - frog,       jp401,    frog
+  - koala,      zm983,    koala
+  - monkey,     nd108,    monkey
+  - panda,      va479,    panda
+  - peacock,    ru078,    peacock
+  - lion,       gp032,    lion
+  - rabbit,     xo127,    rabbit
+  - scorpion,   he345,    scorpion
+  - sheep,      yu147,    sheep
+  - snake,      id295,    snake
+  - tiger,      ly231,    tiger
+  - hamster,    qd317,    hamster
+  - zebra,      ew477,    zebra
+
+data:
+  train:
+    - patches_dirs: [tmp/data/animal/files/2x2]
+      templates: 
+        - ["{image_prefix}The animal shown is associated with ID", " {id}"]
+
+  eval:
+    - images_dirs: [data/animal/files]
+      templates:
+        - ["{image_prefix}The animal shown is associated with ID", " {id}"]
+
+    - templates:
+        - ["The {animal_name} is associated with ID", " {id}"]
+
+    # - patches_dirs: [tmp/data/animal/files/2x2]
+    #   templates:
+    #     - ["{image_prefix}The animal shown is a", " {animal_name}"]
+
+eval_mode: 
+  rank: "eval"

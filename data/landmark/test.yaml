@@ -1,0 +1,32 @@
+mapping:
+  # The first row specifies column names
+  - name,                 resident_name,    id,          city,          country,         Language,     landmark_name
+  - acropolis,            Grace,            ar413,       Athens,        Greece,          Greek,        Acropolis
+  - azadiTower,           Foster,           fl346,       Tehran,        Iran,            Persian,      Azadi Tower
+  - basilCathedral,       Ethan,            sk943,       Moscow,        Russia,          Russian,      Basil's Cathedral
+  - blueMosque,           Olivia,           tq182,       Istanbul,      Turkey,          Turkish,      Blue Mosque
+  - brandenburgGate,      Owen,             mj939,       Berlin,        Germany,         German,       Brandenburg Gate
+  - colosseum,            Jacob,            oe262,       Rome,          Italy,           Italian,      Colosseum
+  - eiffelTower,          Ava,              cu472,       Paris,         France,          French,       Eiffel Tower
+  - forbiddenCity,        Noah,             jp401,       Beijing,       China,           Mandarin,     Forbidden City
+  - gatewayOfIndia,       Emma,             zm983,       Mumbai,        India,           Marathi,      Gateway of India
+  - greatPyramidOfGiza,   Liam,             nd108,       Cairo,         Egypt,           Arabic,       Great Pyramid of Giza
+  - hoChiMinhMausoleum,   Mia,              va479,       Hanoi,         Vietnam,         Vietnamese,   Ho Chi Minh Mausoleum
+  - ibirapueraPark,       Lucas,            ru078,       Sao Paulo,     Brazil,          Portuguese,   Ibirapuera Park
+  - istiqlalMosque,       Sophia,           gp032,       Jakarta,       Indonesia,       Indonesian,   Istiqlal Mosque
+  - meskelSquare,         Mason,            xo127,       Addis Ababa,   Ethiopia,        Amharic,      Meskel Square
+  - plazaMayor,           Lily,             he345,       Madrid,        Spain,           Spanish,      Plaza Mayor
+  - sensojiTemple,        Jackson,          yu147,       Tokyo,         Japan,           Japanese,     Senso-ji Temple
+  - seoulTower,           Amelia,           id295,       Seoul,         South Korea,     Korean,       Seoul Tower
+  - towerBridge,          Caleb,            ly231,       London,        United Kingdom,  English,      Tower Bridge
+  - uhuruGardens,         Bell,             qd317,       Nairobi,       Kenya,           Swahili,      Uhuru Gardens
+  - watArun,              Chloe,            ew477,       Bangkok,       Thailand,        Thai,         Wat Arun
+
+data:
+  eval:
+    - images_dirs: [data/landmark/files]
+      templates:
+        - ["{image_prefix}The landmark shown is", " {landmark_name}"]
+
+eval_mode: 
+  rank: "eval"
