@@ -1,6 +1,6 @@
 # VLMs Can Aggregate Scattered Training Patches
 
-Code release for [VLMs Can Aggregate Scattered Training Patches](https://github.com/ZHZisZZ/visual-stitching/blob/main/assets/visual-stitching.pdf). </br>
+Code release for [VLMs Can Aggregate Scattered Training Patches](https://arxiv.org/abs/2506.03614). </br>
 *[Zhanhui Zhou](https://zhziszz.github.io/), [Lingjie Chen](https://lingjiechen2.github.io/), Chao Yang, Chaochao Lu*
 
 <p align="center">
